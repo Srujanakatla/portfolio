@@ -1,5 +1,57 @@
 let typed = new Typed(".text", {
-    strings: ["Frontend Developer", "Web Developer"],
+    strings: ["Full Stack Development"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true,
+  });
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             "],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
