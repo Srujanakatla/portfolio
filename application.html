@@ -1,0 +1,111 @@
+<html>
+<head>
+<title> Student Registration form </title> <script>
+function v()
+{
+if((document.f1.Name.value=="")||
+(document.f1.Name.value==null))
+{
+alert("enter some name"); return false;
+}
+for(i=0;i<document.f1.Name.value.length;i++)
+{
+var ch=document.f1.Name.value.charAt(i); if(!ch.match(/\w/))
+{
+alert("Invalid Name"); return false;
+}
+}
+if((document.f1.age.value=="") || (document.f1.age.value==null))
+{
+alert("enter some age"); return false;
+}
+if((document.f1.age.value <10)|| (document.f1.age.value > 22))
+{
+alert("Invalid age"); return false;
+}
+for(i=0;i<document.f1.age.value.length;i++)
+{
+var ch1=document.f1.age.value.charAt(i); if(!ch1.match(/\d/))
+{
+alert("Invalid Age"); return false;
+}
+}
+if(document.f1.phone.value.length < 10 || 
+document.f1.phone.value.length >10)
+{
+alert("Invalid phone number"); return false;
+}
+for(i=0;i<document.f1.phone.value.length;i++)
+{
+var ch2=document.f1.phone.value.charAt(i); if(!ch2.match(/\d/))
+{
+alert("Invalid phone number");
+return false;
+}
+}
+var emstr=document.f1.email.value; var indexat=emstr.indexOf("@"); var 
+len=emstr.length;
+var indexdot=emstr.indexOf(".");
+if((emstr==null) || (emstr.value==""))
+{
+alert("plaese enter email id"); return false;
+}
+if(indexat==-1 || indexdot==0 || indexat==indexdot)
+{
+alert("invalid Email ID"); return false;
+}
+if(emstr.indexOf("@",(indexdot+1))!=-1)
+{
+alert("invalid Email ID"); return false;
+}
+if(emstr.indexOf(" ")!=-1)
+{
+alert("invalid Email ID"); return false;
+}
+if(!document.f1.g1[0].checked && !document.f1.g1[1].checked)
+{
+alert("Please select Sex"); return false;
+}
+if(!document.f1.g2[0].checked && !document.f1.g2[1].checked && 
+!document.f1.g2[1].checked)
+{
+alert("Please tick any one hobbie"); return false;
+}
+if(document.f1.g3.selectedIndex==0)
+{
+alert("Please SELECT any one COUNTRY"); return false;
+}
+return true;
+}
+</script>
+</head>
+<body>
+<center><h3> Application Form</h3> </center> <form name="f1" 
+onsubmit=v()> 
+<strong> Name:</strong><input type="text" name="Name"><br/> <br>
+<strong> Age:</strong><input type="text" name="age"><br/> <br>
+<strong> Phone:</strong><input type="text" name="phone"><br/> <br>
+<strong> EmailID:</strong><input type="text" name="email"><br/> <br>
+<strong> Sex:</strong>&nbsp<input type="radio" name="g1"> 
+Male<br/><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input 
+type="radio" name="g1" > Female<br/><br>
+<strong> Hoby:</strong> &nbsp<input type="checkbox" name="g2" 
+value="Singing">Singing<br/><br> 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+&nbsp<input type="checkbox" name="g2" value="Reading"> 
+Reading<br/> <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+&nbsp<input type="checkbox" name="g2" value="TV">Watching 
+TV<br/><br>
+<strong> Country:</strong><select name="g3"> <option 
+value="I">India</option>
+<option value="C">China</option> <option 
+value="S">Srilanka</option> </select>
+<center>
+    
+<input type="submit" name="submit" value="submit"> <input 
+type="reset" name="reset" value="Reset"> <br/> </center>
+</form>
+</body>
+</html>

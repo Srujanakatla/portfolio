@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+   <style>
+    #res{background-color: blue;
+        color:pink;
+        font-size:30px;
+    }
+   </style> 
+   </head>
+        <script>
+            function age()
+            {
+                if(document.getElementById("t1").value>=18)
+                {
+                    document.getElementById("res").innerHTML="ELIGIBLE FOR VOTE";
+                }
+                else{
+                    document.getElementById("res").innerHTML="NOT ELIGIBLE FOR VOTE";
+                }
+            }
+        </script>
+    <body>
+        <h1>enter the age:<input type="text"id="t1"><br></h1>
+        <button type="button"onclick="age()">verify</button><br>
+        <div id="res">VOTE</div>
+    </body>   
+</html>

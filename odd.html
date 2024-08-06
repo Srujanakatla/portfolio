@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <title>Count display the Odd Numbers</title>
+    <script language="javascript">
+        // to read input from user
+        var num = parseInt(window.prompt("Enter Any Number :"));
+        var cnt=0;
+        document.write("<h3> Odd Numbers from 0 to "+num+" are:</h3>");
+        for(var i = 0 ; i<=num ; i++) {
+            if(i % 2 != 0) {
+                document.write(i+"<br/>");
+                cnt++;
+            }
+        }
+        document.write("<h3>The number of Odd Numbers from 0 to "+num+" are: "+cnt+"</h3>");
+    </script>
+ </head>
+ <body>
+ </body>
+</html>

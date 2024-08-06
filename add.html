@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <title>Week 4 : Addition of numbers</title>
+    <script language="javascript">
+    // define function
+        function addnumbers() {
+            // to read data from textboxes
+            var n1=parseInt(document.getElementById('fnum').value);
+            var n2=parseInt(document.getElementById('snum').value);
+            var n3=parseInt(document.getElementById('tnum').value);
+            // to write data into textbox
+            document.getElementById('result').value = (n1 + n2 + n3);
+        }
+    </script>
+ </head>
+ <body>
+ <h2>Add Numbers</h2>
+  <label> First Number : </label> &nbsp;<input type="text" id="fnum"></input><br><br>
+  <label> Second Number : </label> &nbsp;<input type="text" id="snum"></input><br><br>
+  <label> Third Number : </label> &nbsp;<input type="text" id="tnum"></input><br><br>
+  <input type="button" value="Add Numbers" onclick="addnumbers()"></input><br><br>
+  <label> Result : </label> &nbsp;<input type="text" id="result"></input><br><br>
+ </body>
+</html>

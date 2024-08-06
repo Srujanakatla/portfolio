@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+
+    <h2>Sample Form</h2>
+    
+    <form action="https://mail.google.com/mail/u/0/#inbox" method="post">
+        
+        <!-- Personal Information Fieldset -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+        </fieldset>
+        
+        <!-- Account Details Fieldset -->
+        <fieldset>
+            <legend>Account Details</legend>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+        </fieldset>
+        
+        <!-- Contact Information Fieldset -->
+        <fieldset>
+            <legend>Contact Information</legend>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+        </fieldset>
+        
+        <!-- Preferences -->
+        <fieldset>
+            <legend>Preferences</legend>
+            
+            <label for="browser">Preferred Browser:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+            </datalist><br><br>
+            
+            <label for="car">Preferred Car:</label>
+            <select name="car" id="car">
+                <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+                <optgroup label="American Cars">
+                    <option value="ford">Ford</option>
+                    <option value="chevrolet">Chevrolet</option>
+                </optgroup>
+            </select><br><br>
+        </fieldset>
+        
+        <!-- Message Fieldset -->
+        <fieldset>
+            <legend>Message</legend>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        </fieldset>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+        
+    </form>
+
+</body>
+</html>
